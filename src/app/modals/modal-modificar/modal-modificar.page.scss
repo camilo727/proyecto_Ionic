@@ -1,0 +1,33 @@
+ion-header{
+ 
+  ion-title{
+    text-align: center;
+    color: #48C0E7;
+    font-weight: bold;
+
+  }
+
+}
+
+ion-content{
+  width: 100%;
+  .main-form{
+    width: 80%;
+    margin: auto;
+}
+  h1{
+    width: 80%;
+    margin: 2em auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #9e9e9e;
+  }
+  ion-label{
+
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+}

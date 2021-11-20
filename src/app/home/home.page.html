@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Titulo</ion-title>
+  </ion-toolbar>
+</ion-header>
+<!-- <ion-content>
+  <form>
+    <ion-item>
+      <ion-label>Titulo:</ion-label>
+      <ion-input  type="text" formControlName=""></ion-input>
+    </ion-item>
+    <p class="ion-text-center">
+      <ion-button type="submit">Guardar</ion-button>
+    </p>
+  </form>
+</ion-content>   -->
+
+<ion-content>
+  <form [formGroup]="form" (ngSubmit)="guardar()">
+    <input 
+    type="text"
+    formControlName="titulo" 
+    placeholder="Titulo" />
+    <input type="submit" value="Agregar" />
+  </form>
+  <div class="content">
+    <ion-card class="main-card" *ngFor="let data of tasks;  let indice=index;">
+      <ion-card-header (click)="Verdealles(data)">
+        <ion-card-title class="card__title"> {{data.title}} ⬅ </ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <div class="buttons">
+          <ion-button class="btn" color="primary" (click)="moficarTitulo(data)"
+            >Modificar</ion-button
+          >
+          <ion-button color="danger" class="btn" (click)="elminar(data)"
+            >Eliminar</ion-button
+          >
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

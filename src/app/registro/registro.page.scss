@@ -1,0 +1,28 @@
+ion-content{
+  .title{
+    color: #2dd36f;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .text{
+    display: inline-block;
+    color: #2e2e2e;
+    width: 90%;
+    margin-left: 1.2em;
+  }
+  .label{
+    font-size: 14px;
+    color: #9c9c9c;
+  }
+  .button{
+    background: #2dd36f;
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+}

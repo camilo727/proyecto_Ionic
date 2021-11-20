@@ -1,0 +1,89 @@
+ion-header{
+  ion-toolbar{
+    --background: var(--ion-color-success);
+    color: var(--ion-color-primary-contrast);
+  }
+}
+ion-content{
+  // FORMULARIO
+
+
+  form {
+    width: 80%;
+    margin: 2em auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    & > input {
+      flex: 1 1 10ch;
+      margin: .5rem;
+
+      &[type="email"] {
+        flex: 3 1 30ch;
+      }
+    }
+  }
+
+  input {
+    border: none;
+    background: rgb(236, 236, 236);
+    border-radius: .25rem;
+    padding: .75rem 1rem;
+
+    &[type="submit"] {
+      
+      background: rgb(0, 161, 86);
+      color: rgb(251, 251, 251);
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      transition: all 0.4s ease-in-out;
+    }
+    &[type="submit"]:hover {
+      
+      background:rgb(251, 251, 251);
+      color:rgb(0, 161, 86);
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      font-weight: bold;
+    }
+  }
+
+
+  // CARDS
+  .content{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .main-card{
+    background: #e8f9ff;
+    width: 25em;
+    margin: 1em 1em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-card:hover{
+    transform: scale(1.05);
+  }
+  .card__title{
+    text-align: center;
+
+  }
+  .card__title:hover{
+    cursor: pointer;
+    color: #56CAF0;
+  }
+  ion-card-content{
+    .buttons{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .btn{
+      width: 8em;
+    }
+  }
+
+}

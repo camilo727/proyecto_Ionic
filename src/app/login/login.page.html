@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="primary">
+        <ion-icon slot="icon-only" name="arrow-back"> </ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/registro">Sign up</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="logo">
+    <img id="img" src="assets/contra-reembolso.png" />
+  </div>
+  <span id="text">Inicia sesión</span>
+
+  <form id="main__form" [formGroup]="formularioLogin">
+    <ion-input
+      formControlName="email"
+      shape="round"
+      class="input"
+      type="email "
+      placeholder="Email"
+    >
+    </ion-input>
+    <ion-input
+      formControlName="password"
+      shape="round"
+      class="input"
+      type="password"
+      placeholder="Password"
+    >
+    </ion-input>
+  </form>
+  <div id="buttons">
+    <button class="button" (click)="ingresar()">Iniciar sesión</button>
+
+    <button class="register" routerLink="/registro">
+      No te has registrado?<span class="click"> Click Aquí</span>
+    </button>
+  </div>
+</ion-content>

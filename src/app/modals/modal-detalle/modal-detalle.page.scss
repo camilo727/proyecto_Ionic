@@ -1,0 +1,40 @@
+ion-header{
+
+    ion-title{
+      text-align: center;
+      color: #1FB95C;
+      font-weight: bold;
+    }
+
+}
+
+ion-content{
+  width: 100%;
+  margin: auto;
+
+  .details{
+    width: 80%;
+    margin: 2em auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .details p span{
+    color: #2FA7CD;
+    font-weight: bold;
+
+  }
+  .details p{
+    width: 100%;
+    padding: 2em;
+    border-radius: 1em;
+    border: 0.1rem solid rgb(233, 233, 233);
+    color: #232323;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  .details p:hover{
+    transform: scale(1.02);
+  }
+}
